@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #1a73e8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0c5ed7;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="footer">
+      &copy; 2025 Sanjeev | CI/CD React Project | Built with 💻 and GitHub Actions
+    </div>
+  </div>
+
+</body>
+</html>
